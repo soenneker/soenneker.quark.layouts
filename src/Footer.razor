@@ -1,0 +1,16 @@
+@inherits Soenneker.Quark.Components.Element
+
+<footer @attributes="BuildAttributes()">
+	@ChildContent
+</footer>
+
+@code {
+	protected override Dictionary<string, object> BuildAttributes()
+	{
+		Dictionary<string, object> attributes = base.BuildAttributes();
+    		AppendToClassAttr(attributes, "bg-body-tertiary border-top mt-auto");
+		return attributes;
+	}
+}
+
+

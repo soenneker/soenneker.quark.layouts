@@ -1,0 +1,16 @@
+@inherits Soenneker.Quark.Components.Element
+
+<header @attributes="BuildAttributes()">
+	@ChildContent
+</header>
+
+@code {
+	protected override Dictionary<string, object> BuildAttributes()
+	{
+		Dictionary<string, object> attributes = base.BuildAttributes();
+    		AppendToClassAttr(attributes, "navbar navbar-expand bg-body shadow-sm sticky-top");
+		return attributes;
+	}
+}
+
+
