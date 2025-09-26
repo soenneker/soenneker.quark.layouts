@@ -1,5 +1,3 @@
-@using Soenneker.Quark.Divs
-
 @inherits Soenneker.Quark.Element
 
 <CascadingValue Value="@this" IsFixed="true" >
@@ -21,6 +19,7 @@
 </CascadingValue>
 
 @code {
+    public override string? Name { get; set; } = "Layout";
 
     [Parameter]
     public bool HasSider { get; set; }
