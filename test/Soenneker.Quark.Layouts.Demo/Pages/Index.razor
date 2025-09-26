@@ -1,7 +1,7 @@
 @page "/"
 
 <Layout HasSider="true">
-	<Sider>
+	<LayoutSider>
 		<SiderContent>
 			<h5 class="mb-3">Navigation</h5>
 			<ul class="list-unstyled small">
@@ -10,19 +10,19 @@
 				<li class="mb-2"><a class="link-body-emphasis" href="#">Themes</a></li>
 			</ul>
 		</SiderContent>
-	</Sider>
+	</LayoutSider>
 
 	<div class="d-flex flex-column flex-grow-1">
-		<Header>
+		<LayoutHeader>
 			<div class="container-fluid">
 				<div class="d-flex align-items-center justify-content-between">
 					<span class="fw-semibold">Quark Layouts</span>
 					<a class="btn btn-sm btn-primary" href="https://github.com/soenneker">GitHub</a>
 				</div>
 			</div>
-		</Header>
+		</LayoutHeader>
 
-		<Content>
+		<LayoutContent>
 			<div class="container py-4">
 				<h2 class="mb-3">Minimal, elegant page frame</h2>
 				<p class="text-secondary">Header, fixed sidebar, and a content area.</p>
@@ -45,13 +45,13 @@
 					</div>
 				</div>
 			</div>
-		</Content>
+		</LayoutContent>
 
-		<Footer>
+		<LayoutFooter>
 			<div class="container-fluid small d-flex justify-content-between">
 				<span>© @DateTime.Now.Year Soenneker</span>
 				<span class="text-secondary">Quark Layouts Demo</span>
 			</div>
-		</Footer>
+		</LayoutFooter>
 	</div>
 </Layout>

@@ -1,16 +1,16 @@
 @inherits Soenneker.Quark.Element
 
-<footer @attributes="BuildAttributes()">
+<main @attributes="BuildAttributes()">
 	@ChildContent
-</footer>
+</main>
 
 @code {
+    public override string? Name { get; set; } = "LayoutContent";
+
 	protected override Dictionary<string, object> BuildAttributes()
 	{
 		Dictionary<string, object> attributes = base.BuildAttributes();
-    		AppendToClassAttr(attributes, "bg-body-tertiary border-top mt-auto");
+    		AppendToClassAttr(attributes, "flex-grow-1");
 		return attributes;
 	}
 }
-
-
